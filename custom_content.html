@@ -1,0 +1,22 @@
+<div class="alert alert-info">
+  <p>
+  Jan 2018: Hi, This is a Vertcoin Network 2 node in Manchester, UK, with 1% fee</b></p>
+</div>
+
+<div class="alert alert-info">
+  <p>
+  Usage:
+  </p>
+  <p id="sgminer"></p>
+  <p id="ccminer"></p>
+  <p>Fedora ccminer: see <a href="https://negativo17.org/multimedia/">https://negativo17.org/multimedia/ </a>
+  </p>
+</div>
+
+<script>
+  document.getElementById("sgminer").innerHTML =
+"AMD: sgminer -k Lyra2REv2 -o stratum+tcp://82.71.67.91:" + window.location.port + " -u &lt;your_address&gt; -p x";
+  document.getElementById("ccminer").innerHTML =
+"NVidia: ccminer -a lyra2v2 -o stratum+tcp://82.71.67.91" + window.location.port + " -u &lt;your_address&gt; -p x";
+</script>
+
